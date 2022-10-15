@@ -102,8 +102,8 @@ class ReactiveIntlPhoneField<T, V> extends ReactiveFormField<T, V> {
     // bool autoFlipDirection = false,
     // bool hideKeyboard = false,
     // InputDecoration decoration = const InputDecoration(),
-    // TextInputType? keyboardType,
-    // TextCapitalization textCapitalization = TextCapitalization.none,
+    TextInputType? keyboardType,
+    TextCapitalization textCapitalization = TextCapitalization.none,
     TextInputAction? textInputAction,
     // TextStyle? style,
     // StrutStyle? strutStyle,
@@ -176,6 +176,8 @@ class ReactiveIntlPhoneField<T, V> extends ReactiveFormField<T, V> {
             state._setFocusNode(focusNode);
             final controller = textFieldController ?? state._textController;
             return InternationalPhoneNumberInput(
+              keyboardType:
+                  keyboardType ?? const TextInputType.numberWithOptions(),
               focusNode: state.focusNode,
               onInputChanged: onInputChanged,
               onInputValidated: onInputValidated,
