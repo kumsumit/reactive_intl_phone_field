@@ -145,7 +145,6 @@ class ReactiveIntlPhoneField<T, V> extends ReactiveFormField<T, V> {
     final InputDecoration? inputDecoration,
     final InputDecoration? searchBoxDecoration,
     final Color? cursorColor,
-    required final EdgeInsets scrollPadding,
     final FocusNode? focusNode,
     final Iterable<String>? autofillHints,
     final List<String>? countries,
