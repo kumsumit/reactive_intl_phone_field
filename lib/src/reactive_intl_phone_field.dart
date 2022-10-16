@@ -131,21 +131,12 @@ class ReactiveIntlPhoneField<T, V> extends ReactiveFormField<T, V> {
     final String? hintText,
     final Widget? label,
     final String? errorMessage,
-    required final double selectorButtonOnErrorPadding,
-
-    /// Ignored if [setSelectorButtonAsPrefixIcon = true]
-    required final double spaceBetweenSelectorAndTextField,
     final Widget? selectorButtonBottomWidget,
     final Widget? betweenTextFieldWidget,
     // final int maxLength;
-
-    required final bool isEnabled,
     required final bool formatInput,
-    required final bool autoFocus,
-    required final bool autoFocusSearch,
     required final AutovalidateMode autoValidateMode,
     required final bool ignoreBlank,
-    required final bool countrySelectorScrollControlled,
     final String? locale,
     final TextStyle? textStyle,
     final TextStyle? selectorTextStyle,
